@@ -1,0 +1,16 @@
+﻿<Window x:Class="Autorization.Windows.ViewCode"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Autorization.Windows"
+        mc:Ignorable="d"
+         Title="Просмотр кода" Height="350" Width="550" MinHeight="250" MinWidth="350" MaxHeight="400" MaxWidth="650">
+    <Grid>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+            <TextBlock Width="300" Text="Запомните код, затем нажмите кнопку продолжить"></TextBlock>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="Code" FontSize="25"></TextBlock>
+        <Button Margin="20,50,0,0" Click="BtnGoEnter"  Content="Продолжить" Width="100" Height="20"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
