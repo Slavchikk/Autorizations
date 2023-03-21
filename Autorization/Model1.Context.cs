@@ -25,8 +25,24 @@ namespace Autorization
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<active_module> active_module { get; set; }
+        public virtual DbSet<address_subscriber> address_subscriber { get; set; }
+        public virtual DbSet<Cities> Cities { get; set; }
+        public virtual DbSet<Division_code> Division_code { get; set; }
+        public virtual DbSet<FMS> FMS { get; set; }
         public virtual DbSet<Gender> Gender { get; set; }
+        public virtual DbSet<Moduls> Moduls { get; set; }
+        public virtual DbSet<Raoins> Raoins { get; set; }
+        public virtual DbSet<Reason_terminate> Reason_terminate { get; set; }
         public virtual DbSet<ROLES> ROLES { get; set; }
+        public virtual DbSet<Serial_number> Serial_number { get; set; }
+        public virtual DbSet<Services> Services { get; set; }
+        public virtual DbSet<Streets> Streets { get; set; }
+        public virtual DbSet<Subscriber> Subscriber { get; set; }
+        public virtual DbSet<Subscriber_service> Subscriber_service { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<type_binding> type_binding { get; set; }
+        public virtual DbSet<Type_contract> Type_contract { get; set; }
         public virtual DbSet<USERS> USERS { get; set; }
     }
 }

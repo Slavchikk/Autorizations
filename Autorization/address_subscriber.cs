@@ -12,21 +12,25 @@ namespace Autorization
     using System;
     using System.Collections.Generic;
     
-    public partial class ROLES
+    public partial class address_subscriber
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ROLES()
+        public address_subscriber()
         {
-            this.active_module = new HashSet<active_module>();
-            this.USERS = new HashSet<USERS>();
+            this.Subscriber = new HashSet<Subscriber>();
         }
     
-        public int ID_ROLES { get; set; }
-        public string ROLE { get; set; }
+        public string number_subscriber { get; set; }
+        public string prefix_code { get; set; }
+        public Nullable<int> id_raion { get; set; }
+        public Nullable<int> id_city { get; set; }
+        public Nullable<int> id_street { get; set; }
+        public string house { get; set; }
     
+        public virtual Cities Cities { get; set; }
+        public virtual Raoins Raoins { get; set; }
+        public virtual Streets Streets { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<active_module> active_module { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<USERS> USERS { get; set; }
+        public virtual ICollection<Subscriber> Subscriber { get; set; }
     }
 }

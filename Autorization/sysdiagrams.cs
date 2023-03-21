@@ -12,19 +12,12 @@ namespace Autorization
     using System;
     using System.Collections.Generic;
     
-    public partial class USERS
+    public partial class sysdiagrams
     {
-        public int ID_USER { get; set; }
-        public string FIRSTNAME { get; set; }
-        public string SURNAME { get; set; }
-        public string LASTNAME { get; set; }
-        public int ID_ROLE { get; set; }
-        public string CODE { get; set; }
-        public Nullable<int> PASSWORD { get; set; }
-        public Nullable<int> ID_GENDER { get; set; }
-        public string images { get; set; }
-    
-        public virtual Gender Gender { get; set; }
-        public virtual ROLES ROLES { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }

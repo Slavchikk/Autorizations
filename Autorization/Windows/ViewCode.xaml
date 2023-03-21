@@ -9,7 +9,7 @@
     <Grid>
         <StackPanel Orientation="Vertical" VerticalAlignment="Center">
             <TextBlock Width="300" Text="Запомните код, затем нажмите кнопку продолжить"></TextBlock>
-        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="Code" FontSize="25"></TextBlock>
+        <TextBox VerticalAlignment="Center" HorizontalAlignment="Center" Width="150" x:Name="Code" Margin="0,30,0,0" FontSize="25"></TextBox>
         <Button Margin="20,50,0,0" Click="BtnGoEnter"  Content="Продолжить" Width="100" Height="20"></Button>
         </StackPanel>
     </Grid>

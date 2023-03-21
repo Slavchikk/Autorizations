@@ -12,19 +12,13 @@ namespace Autorization
     using System;
     using System.Collections.Generic;
     
-    public partial class USERS
+    public partial class Subscriber_service
     {
-        public int ID_USER { get; set; }
-        public string FIRSTNAME { get; set; }
-        public string SURNAME { get; set; }
-        public string LASTNAME { get; set; }
-        public int ID_ROLE { get; set; }
-        public string CODE { get; set; }
-        public Nullable<int> PASSWORD { get; set; }
-        public Nullable<int> ID_GENDER { get; set; }
-        public string images { get; set; }
+        public int id_subscriber_service { get; set; }
+        public int id_service { get; set; }
+        public int id_subcriber { get; set; }
     
-        public virtual Gender Gender { get; set; }
-        public virtual ROLES ROLES { get; set; }
+        public virtual Services Services { get; set; }
+        public virtual Subscriber Subscriber { get; set; }
     }
 }

@@ -12,21 +12,18 @@ namespace Autorization
     using System;
     using System.Collections.Generic;
     
-    public partial class ROLES
+    public partial class Reason_terminate
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ROLES()
+        public Reason_terminate()
         {
-            this.active_module = new HashSet<active_module>();
-            this.USERS = new HashSet<USERS>();
+            this.Subscriber = new HashSet<Subscriber>();
         }
     
-        public int ID_ROLES { get; set; }
-        public string ROLE { get; set; }
+        public int id_reason_terminate { get; set; }
+        public string reason_terminate1 { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<active_module> active_module { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<USERS> USERS { get; set; }
+        public virtual ICollection<Subscriber> Subscriber { get; set; }
     }
 }
