@@ -51,23 +51,15 @@ namespace Autorization.Pages
             timer.Tick += new EventHandler(close_timer1);
             this.code = code;
 
-            //if(Frameclass.counterDo == 1)
-            //{
-            //    timeBut.Visibility = Visibility.Visible;
-            //}
-
-
-            //DataContext = VM;  // добавление объекта VievModel в ресурсы страницы
-            //CommandBindings.Add(VM.bind);  // добавление объекта привязки на страницу
 
         }
         void close_timer1(object sender, EventArgs e)
         {
 
-            // times.Visibility = Visibility.Visible;
+ 
             if (d != 0)
             {
-                // timeZap.Visibility=Visibility.Visible;
+                times.Visibility = Visibility.Visible;
                 times.Text = "Осталость до окончания ввода " + d.ToString();
                 d--;
 
@@ -76,8 +68,9 @@ namespace Autorization.Pages
             {
 
                 timer.Stop();
-                //btnAuto.IsEnabled = true;
+              
                 MessageBox.Show("Вы не успели ввести код");
+                times.Visibility = Visibility.Hidden;
                 TbPass.IsEnabled = false;
                 TbCode.IsEnabled = false;
                 imgRef.IsEnabled = true;

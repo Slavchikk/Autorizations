@@ -19,7 +19,7 @@
                 <ColumnDefinition />
                 <ColumnDefinition Width="200"/>
             </Grid.ColumnDefinitions>
-            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0" FontSize="25">Телеком Нева Связь</TextBlock>
+            <TextBlock HorizontalAlignment="Center" Style="{StaticResource  TBMainText}" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0" FontSize="25">Телеком Нева Связь</TextBlock>
 
             <StackPanel Orientation="Horizontal" Background="White" Grid.Row="0" Grid.Column="2">
                 <Image  HorizontalAlignment="Right"  Source="/References/logo.jpg" Width="200"/>

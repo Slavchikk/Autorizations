@@ -7,5 +7,12 @@
         <Style TargetType="Button" x:Name="btnAddBack">
             <Setter Property="Background" Value="#B5DEFA" />
         </Style>
+        <Style x:Key="TBMainText" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="36"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="Foreground" Value="#4A67F7"/>
+        </Style>
     </Application.Resources>
 </Application>
